@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { Layout, SEO } from 'components';
-import { BlogPostList } from 'containers';
+// import { BlogPostList } from 'containers';
 
 const BlogPage = () => (
   <Layout noBackground>
     <SEO title='Blog' />
-    <BlogPostList />
+    {/* <BlogPostList /> */}
   </Layout>
 );
 
