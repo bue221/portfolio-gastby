@@ -1,6 +1,6 @@
 import Animated from './animated';
 import Avatar from './avatar';
-import BlogPost from './blog-post';
+import CardProject from './cardProject';
 import Footer from './footer';
 import Header from './header';
 import Layout from './layout';
@@ -8,11 +8,12 @@ import LinkList from './link-list';
 import Modal from './modal';
 import Navigation from './navigation';
 import SEO from './seo';
+import ContactProject from './contactForm';
 
 export {
   Animated,
   Avatar,
-  BlogPost,
+  CardProject,
   Footer,
   Header,
   Layout,
@@ -20,4 +21,5 @@ export {
   Modal,
   Navigation,
   SEO,
+  ContactProject,
 };

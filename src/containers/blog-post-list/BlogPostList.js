@@ -1,9 +1,9 @@
 // import React from 'react';
 // import { withStyles } from '@material-ui/styles';
 
-// import { BlogPost } from 'components';
+// import { cardProject } from 'components';
 
-// import useBlogPosts from './useBlogPosts';
+// import useProjects from '../welcome/useProjects';
 // import styles from './style';
 
 // type Props = {
@@ -11,12 +11,12 @@
 // };
 
 // const BlogPostList = ({ classes }: Props) => {
-//   const { allContentfulBlogPost } = useBlogPosts();
+//   const { projects } = useProjects();
 
 //   return (
 //     <div className={classes.container}>
-//       {allContentfulBlogPost.edges.map(({ node }, index) => (
-//         <BlogPost key={index} data={node} />
+//       {projects.edges.map(({ node }, index) => (
+//         <cardProject key={index} {...node} />
 //       ))}
 //     </div>
 //   );

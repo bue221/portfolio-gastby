@@ -12,12 +12,14 @@ const content = {
       newTab: true,
     },
     {
-      to: 'https://www.linkedin.com/in/andr%C3%A9s-camilo-plaza-jim%C3%A9nez-679654196/',
+      to:
+        'https://www.linkedin.com/in/andr%C3%A9s-camilo-plaza-jim%C3%A9nez-679654196/',
       text: 'Linkedin',
       Icon: FaLinkedin,
       newTab: true,
     },
   ],
+  secondTitle: 'Projects',
 };
 
 export default content;
