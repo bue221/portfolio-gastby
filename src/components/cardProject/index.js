@@ -17,9 +17,16 @@ type Props = {
   data: Object,
 };
 
-const cardProject = ({ classes, img, name, repositorio, website }: Props) => (
+const cardProject = ({
+  classes,
+  img,
+  name,
+  repositorio,
+  website,
+  key,
+}: Props) => (
   <>
-    <Card className={classes.root}>
+    <Card className={classes.root} key={key}>
       <CardActionArea onClick={() => window.open(website)}>
         <CardMedia
           className={classes.media}

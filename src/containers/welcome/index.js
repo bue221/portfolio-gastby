@@ -24,24 +24,7 @@ const { tagline, title, subtitle, links, secondTitle } = content;
 
 const Welcome = ({ classes }) => {
   const { projects } = useProjects();
-  const [scroll, setScroll] = useState(false);
   const refDivProject = useRef();
-
-  const handleScroll = () => {
-    const div = refDivProject.current;
-    const { y } = div.getBoundingClientRect();
-
-    console.log(y);
-    y < 100 && setScroll(true);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <>
@@ -78,9 +61,9 @@ const Welcome = ({ classes }) => {
         </Fade>
         <Zoom in={!!projects} timeout={8000}>
           <div className={classes.projectsDiv}>
-            {projects.edges.map(({ node }) => (
+            {projects.edges.map(({ node }, i) => (
               <>
-                <CardProject {...node} />
+                <CardProject {...node} key={i} />
               </>
             ))}
           </div>
